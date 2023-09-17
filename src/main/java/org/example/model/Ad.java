@@ -8,26 +8,19 @@ public class Ad {
     private DistrictCodes district;
     private Agent agent;
     private int price;
-    private boolean furnished;
-    private boolean furnish;
+    private boolean isFurnished;
 
-    public Ad(int id, String address, DistrictCodes district, Agent agent, int price) {
+    public Ad(int id, String address, DistrictCodes district, Agent agent, int price, boolean isFurnished) {
         this.id = id;
         this.address = address;
         this.district = district;
         this.agent = agent;
         this.price = price;
-        this.furnished = furnish;
-    }
-
-    public void setFurnish() {
-        furnished = true;
+        this.isFurnished = isFurnished;
     }
 
     public boolean isFurnished() {
-        if (furnished)
-            return true;
-        return furnished;
+        return isFurnished;
     }
 
     public int getId() {
@@ -71,7 +64,7 @@ public class Ad {
     }
 
     public void setFurnished(boolean furnished) {
-        this.furnished = furnished;
+        this.isFurnished = furnished;
     }
 
     @Override
@@ -82,7 +75,7 @@ public class Ad {
                 ", district=" + district +
                 ", agent=" + agent +
                 ", price=" + price +
-                ", furnished=" + furnished +
+                ", furnished=" + isFurnished +
                 '}';
     }
 }
