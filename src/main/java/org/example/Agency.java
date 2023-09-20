@@ -9,8 +9,6 @@ import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
-import static java.util.Locale.filter;
-
 public class Agency {
     List<User> users;
     List<Ad> ads;

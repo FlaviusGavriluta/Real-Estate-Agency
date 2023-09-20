@@ -5,8 +5,6 @@ import org.example.model.Ad;
 import org.example.model.Agent;
 import org.example.model.User;
 
-import java.util.List;
-
 import java.util.function.Predicate;
 
 public class Main {
